@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <section id="input" class="input">
+        <input type="text" id="textsearch" placeholder="Enter a pokemon name or number" />
+        <button id="search" onclick="fetchPokemon()">Search</button>
+    </section>
+    <section id="section">
+        <div class="poke-top" id="poke-top">
+            <div class="numberandname">
+                <p id="pokenumber"></p>
+                <p id="pokename"></p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="poke-img" id="poke-img">
+                <img src="" alt="Pokeimg" id="pokeImg">
+            </div>
+            <div class="poke-stats">
+                <div class="types" id="types"></div>
+                <div class="flex-stat">
+                    <p>HP</p>
+                    <p id="hp">
+                    </p> <progress id="hpbar" value="0" max="200"> </progress>
+                </div>
+                <div class="flex-stat">
+                    <p>Attack</p>
+                    <p id="attack"></p>
+                    <progress id="attackbar" value="0" max="200"></progress>
+                </div>
+                <div class="flex-stat">
+                    <p>Defense</p>
+                    <p id="defense"></p>
+                    <progress id="defensebar" value="0" max="200"></progress>
+                </div>
+                <div class="flex-stat">
+                    <p>Sp.Def</p>
+                    <p id="sp-attack"></p>
+                    <progress id="sp-attackbar" value="0" max="200"></progress>
+                </div>
+                <div class="flex-stat">
+                    <p>Sp.Att</p>
+                    <p id="sp-defense"></p>
+                    <progress id="sp-defensebar" value="0" max="200"></progress>
+                </div>
+                <div class="flex-stat">
+                    <p>Speed</p>
+                    <p id="speed"></p>
+                    <progress id="speedbar" value="0" max="200"></progress>
+                </div>
+            </div>
+        </div>
+        <div id="div-description" class="div-description">
+            <p id="description-text"></p>
+        </div>
+        <div class="poke-bottom">
+            <div class="poke-info botom">
+                <div class="botom-info">
+                    <p id="heigh"></p>
+                    <p>Heigh</p>
+                </div>
+                <div class="botom-info">
+                    <p id="weight"></p>
+                    <p>Weight</p>
+                </div>
+                <div class="botom-info">
+                    <p id="xp"></p>
+                    <p>Base Experience</p>
+                </div>
+            </div>
+            <div class="poke-abilities botom">
+                <p>Abilities</p>
+                <div>
+                    <p id="ability1"></p>
+                    <p id="ability2"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="left-click" class="left-click btn" onclick="fetchprev()"></div>
+    <div id="right-click" class="right-click btn" onclick="fetchNext()"></div>
+    <script src="./js/pokedex.js"></script>
+</body>
+
+</html>

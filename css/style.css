@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(213, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    width: 60%;
+    min-height: 40px;
+    margin: 0 0 2% 0;
+}
+
+.input button {
+    flex: 1;
+}
+
+.input input {
+    flex: 8;
+    margin: none;
+    border-radius: 2%;
+}
+
+#section {
+    min-height: 80%;
+    width: 60%;
+    border-radius: 5%;
+    background-color: rgb(174, 248, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.poke-top {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numberandname {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.numberandname p {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.poke-top p {
+    flex: 1;
+    margin: 5px;
+}
+
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.poke-img {
+    border-radius: 50%;
+    flex: 1;
+    margin: 0 10% 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poke-img img {
+    flex: 1;
+    height: 100%;
+}
+
+.poke-stats {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.flex-stat {
+    flex: 1;
+    display: flex;
+}
+
+.flex-stat p {
+    display: flex;
+    flex: 1;
+}
+
+.flex-stat progress {
+    display: flex;
+    flex: 3;
+}
+
+.poke-bottom {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.botom {
+    flex: 1;
+    text-align: center;
+}
+
+.poke-info {
+    display: flex;
+    flex: 1;
+}
+
+.botom-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.botom-info p {
+    margin: 1%;
+}
+
+.div-description {
+    display: flex;
+    text-align: center;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-text {
+    flex: 1;
+}
+
+.pokeclass {
+    border-radius: 30%;
+    background-color: aquamarine;
+    margin: 5%;
+    padding: 10%;
+}
+
+.types {
+    display: flex;
+}
+
+#bottom {
+    display: flex;
+    width: 60%;
+    min-height: 40px;
+    margin: 2% 0 0 0;
+}
+
+#bottom button {
+    flex: 1;
+}
+
+.btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.left-click {
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid;
+    left: 10%;
+}
+
+.right-click {
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid;
+    right: 10%;
+}
+
+.moco {
+    background: #edfa8b;
+}
